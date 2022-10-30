@@ -126,8 +126,7 @@ function win(ar) {
         playerWinImg.src = "images/xGame.png";
         containerWin.classList.add("active");
         playerWin.innerHTML = "TAKES THE ROUND";
-        WinX += 1;
-        window.localStorage.setItem("WinX", WinX);
+        window.localStorage.setItem("WinX", WinX + 1);
     } else if (
         (ar[0] == "o" && ar[1] == "o" && ar[2] == "o") ||
         (ar[0] == "o" && ar[3] == "o" && ar[6] == "o") ||
@@ -140,8 +139,7 @@ function win(ar) {
     ) {
         console.log("O Win :) !!!!");
         playerWinImg.style.display = "block";
-        WinO += 1;
-        window.localStorage.setItem("WinO", WinO);
+        window.localStorage.setItem("WinO", WinO + 1);
         playerWin.innerHTML = "TAKES THE ROUND";
         containerWin.classList.add("active");
         playerWinImg.src = "images/Owin.png";
