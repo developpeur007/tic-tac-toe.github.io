@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap');
+
+/* =========== Start Main Style =========== */
+
+:root {
+    --main-background-body: #0B131A;
+    --main-background-box: #1E3640;
+    --main-color: #6F8691;
+    --alt-color: #F2B236;
+    --alt-color-hover: #D49519;
+    --alt-color-two: #31C4BE;
+    --alt-background-two: #178C88;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: var(--main-background-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/* =========== Ende Main Style =========== */
+
+.container {
+    width: 30%;
+}
+
+.container .pick {
+    background-color: var(--main-background-box);
+    padding: 40px 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 7px 1px #12272E;
+}
+
+.container .pick h2,
+.container .pick p {
+    color: var(--main-color);
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.container .pick .x-o {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-background-body);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.container .pick .x-o .x,
+.container .pick .x-o .o {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container .pick .x-o .x img,
+.container .pick .x-o .o img {
+    width: 40px;
+    transition: .5s;
+}
+
+.container .pick .x-o .o {
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container .play {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container .play .pc {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--alt-color);
+    margin: 30px 0;
+    text-align: center;
+    font-weight: bold;
+    color: var(--main-background-body);
+    font-size: 22px;
+    border-radius: 10px;
+    box-shadow: 2px 6px 1px var(--alt-color-hover);
+    transition: .3s;
+}
+
+.container .play .pc:active {
+    box-shadow: 2px 0px 1px var(--alt-color-hover);
+}
+
+.container .play .player {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--alt-color-two);
+    text-align: center;
+    font-weight: bold;
+    color: var(--main-background-body);
+    font-size: 22px;
+    border-radius: 10px;
+    box-shadow: 2px 6px 1px var(--alt-background-two);
+    transition: .3s;
+}
+
+.container .play .player:active {
+    box-shadow: 2px 0px 1px var(--alt-color-hover);
+}
